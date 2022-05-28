@@ -5,7 +5,7 @@ description = ""
 authors = ["Danilo <daconnas.dcn@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10.4"
+python = "^3.9.12"
 Django = "^4.0.4"
 gunicorn = "^20.1.0"
 
