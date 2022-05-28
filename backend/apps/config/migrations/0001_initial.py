@@ -7,18 +7,43 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Image',
+            name="Image",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_at', models.DateTimeField(auto_created=True, editable=False, verbose_name='Criado em')),
-                ('name', models.CharField(blank=True, max_length=250, null=True, verbose_name='Nome')),
-                ('image', models.ImageField(blank=True, null=True, upload_to='', verbose_name='imagem')),
-                ('updated_at', models.DateTimeField(auto_now=True, verbose_name='Criado em')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "created_at",
+                    models.DateTimeField(
+                        auto_created=True, editable=False, verbose_name="Criado em"
+                    ),
+                ),
+                (
+                    "name",
+                    models.CharField(
+                        blank=True, max_length=250, null=True, verbose_name="Nome"
+                    ),
+                ),
+                (
+                    "image",
+                    models.ImageField(
+                        blank=True, null=True, upload_to="", verbose_name="imagem"
+                    ),
+                ),
+                (
+                    "updated_at",
+                    models.DateTimeField(auto_now=True, verbose_name="Criado em"),
+                ),
             ],
         ),
     ]
